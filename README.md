@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# 🐱‍👤| GitHub Repositories Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ <p> Uma página que mostra informações relevantes sobre algum usuário e exibe também seu repositório. </b></p>
 
-Currently, two official plugins are available:
+## Indice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Funcionaldiade do projeto](#Funcionalidade-do-projeto)
+- [UI](#UI)
+- [Executar projeto](#Como-rodar)
+- [Tecnologias utilizadas](#Tecnologias-utilizadas)
+- [Autor](#Autor)
+- [Atualizações Futuras](#Atualizações-futuras)
 
-## Expanding the ESLint configuration
+## Funcionalidade do projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [x] Mostrar informações sobre o perfil de algum usuário;
+- [x] Detalhes sobre repositórios de uma determinada pessoa;
+- [x] Site Responsivo.
 
-- Configure the top-level `parserOptions` property like this:
+## UI
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<div align = "center">
+    <h3> Página Inicial </h3>
+    <img src = "./public/main-view.png">
+    <h3> Página de Repositórios </h3>
+    <img src = "./public/repositories-view.png">
+</div>
+<br>
+
+## Como rodar o projeto
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/jefolidev/github-search.git
+
+# Acesse a pasta do proejeto no terminal
+# cd github-search
+
+# Instale todas dependências
+$ npm insall
+
+# Execute a aplicação
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tecnologias utilizadas
+
+<div align = center>
+<img src = "https://skillicons.dev/icons?i=html,css,js,ts,react">
+</div>
+
+## Autor
+
+<div align = center>
+ <img src = "./src/assets/github/fotominhacircle.png" style = "width: 100px;">
+ <p> <b> Jeferson Franco, Desenvolvedor Full Stack </b> </p> 
+ <a style = "text-decoration: none;" href = "https://github.com/jefolidev"> <img src = "https://skillicons.dev/icons?i=linkedin" style = "width: 20px;"> </a>
+ <a style = "text-decoration: none;" href = "https://www.linkedin.com/in/jeferson-franco-1349062b0/"> <img src = "https://skillicons.dev/icons?i=github&theme=light" style = "width: 20px;"> </a>
+</div>
+
+## Atualizações futuras
+
+- Adicionar theme switcher;
+- Fazer uma barra de pesquisa que filtra o nome dos repositórios.
+

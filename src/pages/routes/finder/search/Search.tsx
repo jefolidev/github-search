@@ -10,11 +10,18 @@ const Search = ({ loadUser }: SearchProps) => {
   const [writeUser, setWriteUser] = useState('')
 
   const handleEnterPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
+    if (writeUser === '' && e.key === 'Enter') {
+      alert('Digite algum nome.')
+    } else if (e.key === 'Enter') {
       loadUser(writeUser)
     }
   }
 
+  const handleSearchPress = () => {
+    if (writeUser === '') {
+      alert('Digite algum nome.')
+    } else loadUser(writeUser)
+  }
   return (
     <div className="Search">
       <input
@@ -24,7 +31,7 @@ const Search = ({ loadUser }: SearchProps) => {
         onChange={(e) => setWriteUser(e.target.value)}
         onKeyDown={handleEnterPress}
       />
-      <button className="searchButton" onClick={() => loadUser(writeUser)}>
+      <button className="searchButton" onClick={handleSearchPress}>
         <BsSearch className="iconSearch" />
       </button>
     </div>
