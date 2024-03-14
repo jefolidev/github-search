@@ -1,0 +1,57 @@
+.wrapperRepo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 25px;
+}
+
+.repoBox {
+  background-color: rgb(56, 43, 69);
+  width: 20rem;
+  height: 130px;
+  border-radius: 20px;
+  padding: 15px 15px;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s, height 0.8s;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repoBox:hover {
+  transform: scale(1.05);
+  height: 180px;
+}
+
+.infoWrapper {
+  align-self: flex-start;
+  margin-bottom: 70px;
+  transition: margin-bottom 0.8s;
+}
+
+.repoBox:hover .infoWrapper {
+  margin-bottom: 18px;
+}
+
+.buttonWrapper {
+  align-self: center;
+}
+
+.repoButton {
+  background-color: rgb(57, 122, 57);
+  border: none;
+  padding: 10px;
+  border-radius: 1rem;
+
+  font-size: 18px;
+}
+
+.repoButton:hover {
+  cursor: pointer;
+  background-color: rgb(40, 99, 40);
+}

@@ -1,0 +1,47 @@
+* {
+  color: white;
+}
+
+.Finder {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+}
+
+.finderSideBar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+  background-color: rgb(56, 43, 69);
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.wrapperSearch {
+  position: sticky;
+  top: 20px;
+}
+
+.previewTitle {
+  font-size: small;
+  font-weight: 500;
+}
+
+.previewContent {
+  background-color: rgb(103, 89, 116);
+  width: 14rem;
+  height: 25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.socialInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

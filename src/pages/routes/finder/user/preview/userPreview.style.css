@@ -1,0 +1,34 @@
+.UserPreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilePic {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 10px;
+}
+
+.userName {
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+
+.locationWrapper {
+  margin-top: 5px;
+}
+
+.socialInfo {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.followers,
+.following {
+  display: flex;
+  font-size: 15px;
+}
