@@ -14,7 +14,9 @@
   padding: 15px 15px;
   overflow: hidden;
   transform: scale(1);
-  transition: transform 0.3s, height 0.8s;
+  transition:
+    transform 0.3s,
+    height 0.8s;
 
   position: relative;
 
@@ -54,4 +56,25 @@
 .repoButton:hover {
   cursor: pointer;
   background-color: rgb(40, 99, 40);
+}
+
+/* Telas pequenas (smartphones) */
+@media (max-width: 576px) {
+  .wrapperRepo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10;
+    padding: 25px;
+  }
+}
+/* Telas médias (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .wrapperRepo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 25px;
+  }
 }
